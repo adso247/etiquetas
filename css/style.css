@@ -1,0 +1,59 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilos para la etiqueta de entrada */
+  .input {
+    font-family: inherit; /* Utiliza la fuente del elemento padre */
+    font-size: inherit; /* Utiliza el tamaño de fuente del elemento padre */
+    padding: 10px 6px; /* Espaciado interno vertical y horizontal */
+    min-width: 20px; /* Ancho mínimo del elemento */
+    display: flex; /* Utiliza un modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente el contenido */
+    outline: none; /* Quita el resaltado al enfocar el elemento */
+  }
+  
+  /* Estilos para el contenedor de entrada de etiquetas */
+  .input-tag-container {
+    display: flex; /* Utiliza un modelo de caja flexible */
+    padding: 5px; /* Espaciado interno del contenedor */
+    width: 500px; /* Ancho máximo del contenedor */
+    flex-wrap: wrap; /* Permite que las etiquetas se ajusten a una nueva línea si no hay espacio */
+    border: solid 1px #ccc; /* Borde del contenedor */
+  }
+  
+  /* Estilos para el contenedor de etiquetas */
+  .tag-container {
+    display: flex; /* Utiliza un modelo de caja flexible */
+    gap: 5px; /* Espacio entre las etiquetas */
+    flex-wrap: wrap; /* Permite que las etiquetas se ajusten a una nueva línea si no hay espacio */
+  }
+  
+  /* Estilos para cada elemento de etiqueta */
+  .tag-item {
+    border: solid 1px #ccc; /* Borde de cada etiqueta */
+    background-color: #eee; /* Color de fondo de las etiquetas */
+    display: flex; /* Utiliza un modelo de caja flexible */
+    padding: 5px; /* Espaciado interno de cada etiqueta */
+    border-radius: 3px; /* Bordes redondeados */
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  /* Estilos para el botón de eliminar etiqueta */
+  .tag-item button {
+    width: 25px; /* Ancho del botón */
+    height: 25px; /* Altura del botón */
+    border-radius: 50%; /* Crea un círculo con bordes redondeados */
+    padding: 5px; /* Espaciado interno del botón */
+    margin-left: 5px; /* Espacio a la izquierda del botón */
+    border: none; /* Sin borde en el botón */
+    background-color: transparent; /* Fondo transparente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  /* Estilos al pasar el cursor sobre el botón de eliminar */
+  .tag-item button:hover {
+    background-color: #ccc; /* Cambia el color de fondo al pasar el cursor */
+  }
+  
